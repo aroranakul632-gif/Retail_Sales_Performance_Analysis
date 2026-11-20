@@ -190,7 +190,8 @@ if len(high_revenue_orders) > 0:
 else:
     print("No high revenue orders found")
 
-    # Loop to display business recommendations
+# Loop to display business recommendations
+
 recommendations = [
     "Focus on top revenue-generating products",
     "Focus on high-revenue cities",
@@ -201,3 +202,13 @@ recommendations = [
 
 for i, recommendation in enumerate(recommendations, start=1):
     print(i, recommendation)
+
+    # ==========================================
+# END OF PROJECT 1
+# ==========================================
+# Name: Nakul
+# Admission No.: 2026B15410287
+# Branch: CSE DS 2
+# GitHub Repository:
+# https://github.com/aroranakul632-gif/Retail_Sales_Performance_Analysis.git
+# ==========================================
