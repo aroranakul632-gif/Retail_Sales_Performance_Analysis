@@ -1,13 +1,15 @@
 
 import pandas as pd
 import numpy as np
+from pathlib import Path
 
 # Function to calculate average revenue
 def calculate_average_revenue(data):
     return data["Revenue"].mean()
 
 # Load dataset
-df = pd.read_csv("data/01_retail_sales.csv")
+BASE_DIR = Path(__file__).resolve().parent.parent
+df = pd.read_csv(BASE_DIR / "data" / "01_retail_sales.csv")
 
 # Display first 5 rows
 print(df.head())
@@ -153,7 +155,7 @@ print("Median Revenue:", np.median(order_revenue))
 print("Standard Deviation:", np.std(order_revenue))
 
 # Save Cleaned Dataset
-df.to_csv("data/cleaned_retail_sales.csv", index=False)
+df.to_csv(BASE_DIR / "data" / "cleaned_retail_sales.csv", index=False)
 
 print("Cleaned dataset saved successfully!")
 
